@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Game</title>
+    <link rel="icon" type="image/x/-icon" href="https://veicm.github.io/My_Website/images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://veicm.github.io/My_Website/css/style.css">
+    
+</head>
+<body>
+    <headline>
+        <h1>Rocket Game</h1>
+    </headline>
+    <score>
+        <input id="display" readonly placeholder="Score">
+    </score>
+    <game id = "canvas-container"></game>
+    <div id="keys">
+        <button onclick="spaceKeyPressed()" id="shoot">Space</button>
+        <button onclick="leftKeyPressed()" id="left">Left Arrow</button>
+        <button onclick="upKeyPressed()" id="up">Up Arrow</button>
+        <button onclick="downKeyPressed()" id="down">Down Arrow</button>
+        <button onclick="rightKeyPressed()" id="right">Right Arrow</button>
+    </div>
+    <script src="gameloop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+    <script src="script.js"></script> 
+    <script src="digital-button.js"></script>
+</body>
+</html>
